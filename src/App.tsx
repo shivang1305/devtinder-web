@@ -1,8 +1,17 @@
+import { Routes, Route } from "react-router-dom";
+import Login from "./components/Login";
+import Signup from "./components/Signup";
+import Home from "./pages/Home";
+
 function App() {
   return (
-    <div className="h-screen flex items-center justify-center bg-black text-white">
-      <h1 className="text-6xl font-bold text-pink-400">DevTinder 🚀</h1>
-    </div>
+    <Routes>
+      {/* Public routes */}
+      <Route element={<Home />}>
+        <Route path="/" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+      </Route>
+    </Routes>
   );
 }
 
