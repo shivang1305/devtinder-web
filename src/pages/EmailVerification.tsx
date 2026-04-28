@@ -3,6 +3,7 @@ import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
 import { Label } from "../components/ui/label";
 import { Code2, Mail, ShieldCheck, ArrowLeft, CheckCircle } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export function EmailVerification() {
   const [email, setEmail] = useState("");
@@ -141,13 +142,13 @@ export function EmailVerification() {
 
                 {/* Back to Login */}
                 <div className="pt-4 border-t border-white/10">
-                  <a
-                    href="#"
-                    className="flex items-center justify-center gap-2 text-sm text-gray-300 hover:text-white"
+                  <Link
+                    to="/"
+                    className="flex items-center justify-center gap-2 text-sm text-gray-300 hover:text-white mt-2"
                   >
                     <ArrowLeft className="size-4" />
                     Back to Login
-                  </a>
+                  </Link>
                 </div>
               </div>
             ) : (
