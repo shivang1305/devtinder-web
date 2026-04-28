@@ -178,7 +178,7 @@ export default function Signup() {
         Already have an account?{" "}
         <a
           href="/"
-          className="font-semibold transition-opacity hover:opacity-80"
+          className="font-semibold transition-opacity hover:opacity-80 hover:underline"
           style={{ color: "#f472b6" }}
         >
           Sign in

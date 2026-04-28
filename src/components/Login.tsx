@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -123,13 +124,13 @@ export default function Login() {
 
       {/* Forgot Password */}
       <div className="flex justify-end mb-7">
-        <a
-          href="#"
+        <Link
+          to="/forgot-password"
           className="text-base font-medium transition-opacity hover:opacity-80 hover:underline"
           style={{ color: "#f472b6" }}
         >
           Forgot password?
-        </a>
+        </Link>
       </div>
 
       {/* Sign In Button */}
