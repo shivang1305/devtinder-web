@@ -72,7 +72,7 @@ export default function Signup() {
 
       <div className="mb-5">
         <label className="block text-white text-base font-medium mb-2">
-          Email
+          Name
         </label>
         <input
           type="text"
