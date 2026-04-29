@@ -148,7 +148,7 @@ cd devtinder-api
 npm install
 ```
 
-**Backend Repository**: [DevTinder API](https://github.com/yourusername/devtinder-api)
+**Backend Repository**: [DevTinder API](https://github.com/shivang1305/devtinder)
 
 ## ⚙️ Configuration
 
@@ -287,7 +287,7 @@ The `dist/` folder can be deployed to any static hosting service:
 
 The frontend communicates with the DevTinder API backend. For complete API documentation, including endpoints, request/response formats, and authentication details, please refer to the backend repository:
 
-**[DevTinder API Documentation](https://github.com/yourusername/devtinder-api)**
+**[DevTinder API Documentation](https://github.com/shivang1305/devtinder)**
 
 ### Key API Endpoints Used:
 
@@ -397,14 +397,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For issues, questions, or suggestions:
 
-- **Issues**: Create an issue in the [GitHub repository](https://github.com/yourusername/devtinder-web/issues)
+- **Issues**: Create an issue in the [GitHub repository](https://github.com/shivang1305/devtinder-web/issues)
 - **Email**: support@devtinder.com
-- **Documentation**: [Wiki](https://github.com/yourusername/devtinder-web/wiki)
+- **Documentation**: [Wiki](https://github.com/shivang1305/devtinder-web/wiki)
 
 ### Related Repositories
 
-- [DevTinder API Backend](https://github.com/yourusername/devtinder-api)
-- [DevTinder Documentation](https://github.com/yourusername/devtinder-docs)
+- [DevTinder API Backend](https://github.com/shivang1305/devtinder)
+- [DevTinder Documentation](https://github.com/shivang1305/devtinder)
 
 ---
 
