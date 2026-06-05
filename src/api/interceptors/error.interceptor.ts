@@ -5,7 +5,7 @@ export interface ApiErrorResponse {
   message: string;
   statusCode: number;
   isNetworkError?: boolean;
-  originalError?: any;
+  originalError?: unknown;
 }
 
 client.interceptors.response.use(
@@ -31,9 +31,9 @@ client.interceptors.response.use(
     // Normalize error message based on backend response format
     // Adjust based on your backend's actual response format
     const message =
-      (data as any)?.message ||
-      (data as any)?.error ||
-      (data as any)?.msg ||
+      (data as unknown as { message?: string })?.message ||
+      (data as unknown as { error?: string })?.error ||
+      (data as unknown as { msg?: string })?.msg ||
       error.message ||
       "An error occurred. Please try again.";
 

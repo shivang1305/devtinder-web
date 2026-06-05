@@ -13,7 +13,11 @@ client.interceptors.response.use(
     return response;
   },
   async (error: AxiosError) => {
-    const config = error.config as any;
+    const config = error.config as unknown as {
+      retryCount?: number;
+      method: string;
+      url?: string;
+    };
 
     // Initialize retry count on first attempt
     if (!config.retryCount) {
